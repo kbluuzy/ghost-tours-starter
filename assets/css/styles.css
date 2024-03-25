@@ -1,9 +1,102 @@
 body {
     background-color: black;
     text-align: center;
+    color: white;
+    font-family: "Vollkorn", "sans-serif";
+    margin: 0px;
 }
 
 h1 {
     font-family: "Vollkorn";
     color: white;
+}
+
+.ghost {
+    width: 400px;
+    transition: opacity 3s, transform 1s;
+    transition-delay: .5s;
+}
+
+.ghost:hover {
+    opacity: 0;
+    transform: translateX(150px) ;
+}
+
+
+
+#tours article {
+    position: relative;
+}
+
+#tours .overlay {
+   position: absolute;
+   top: 0;
+   left: 0; 
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0,0,0,.8);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   opacity: 0;
+   transition: opacity .5s;
+}
+
+#tours .overlay:hover {
+    opacity: 1;
+}
+
+@media (max-width: 870px) {
+    #tours .overlay {
+        opacity: 1;
+        position: relative;
+    }
+}
+
+#tours img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#tours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#book {
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)), url('../imgs/ghost-bg.jpeg');
+    height: 600px;
+}
+
+#book form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: left;
+    margin:auto;
+    font-size: 20px;
+}
+
+#book input, #book select {
+    width: 400px;
+    height: 30px;
+}
+
+#book button {
+    background-color: black;
+    color: white;
+    font-family: "Vollkorn";
+    font-size: 24px;
+    padding: 10px 30px;
+    border-width: 0px;
+    transition: background-color .5s, color .5s;
+}
+
+#book button:hover {
+    background-color: orange;
+    color: black;
 }
