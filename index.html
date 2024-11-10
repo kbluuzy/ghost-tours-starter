@@ -14,52 +14,70 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Ghoulish Ghost Tours</h1>
-    <img class="ghost" src="assets/imgs/cartoon-ghost.png">
 
-    <h2>Choose Your Tour</h2>
-    <section id="tours">
-      <article>
-        <img src="assets/imgs/haunted-house-1.png" width="400" alt="A haunted cottage">
-        <div class="overlay">
-          <h3>Haunted Cottage</h3>
-          <p>This house has been abandoned since its owner mysteriously disappeared.</p>
-        </div>
-      </article>
-      <article>
-        <img src="assets/imgs/haunted-house-2.jpeg" width="400" alt="A haunted cottage">
-        <div class="overlay">
-          <h3>Haunted Cottage</h3>
-          <p>This house has been abandoned since its owner mysteriously disappeared.</p>
-        </div>
-      </article>
-      <article>
-        <img src="assets/imgs/haunted-house-3.jpeg" width="400" alt="A haunted cottage">
-        <div class="overlay">
-          <h3>Haunted Cottage</h3>
-          <p>This house has been abandoned since its owner mysteriously disappeared.</p>
-        </div>
-      </article>
-    </section>
-    <section id="book">
-      <h2>Book Your Tour</h2>
-      <form>
-        <label for="name"> Name </label>
-        <input type="text" id="name">
-        <br>
-        <label for="email">Email</label>
-        <input type="email" id="email">
-        <br>
-        <label for="tour-type">Select your tour</label>
-        <select id="tour-type">
-          <option>Haunted Cottage</option>
-          <option>Haunted Mansion</option>
-          <option>Haunted Colonial</option>
-        </select>
-        <br>
-        <button>Book Tour</button>
-      </form>
-    </section>
-  </body>
+    <body>
+      <main>
+      <h1>Ghoulish Ghost Tours</h1>
+      <img class="ghost" src="assets/imgs/cartoon-ghost.png">
+      <h2>Choose Your Tour</h2>
+      <section id="tours">
+        <article>
+          <img src="assets/imgs/haunted-house-1.png" width="400" alt="A haunted cottage">
+          <div class="overlay">
+            <h3>Haunted Cottage</h3>
+            <p>This house has been abandoned since its owner mysteriously disappeared.</p>
+          </div>
+        </article>
+        <article>
+          <img src="assets/imgs/haunted-house-2.jpeg" width="400" alt="A haunted cottage">
+          <div class="overlay">
+            <h3>Haunted Cottage</h3>
+            <p>This house has been abandoned since its owner mysteriously disappeared.</p>
+          </div>
+        </article>
+        <article>
+          <img src="assets/imgs/haunted-house-3.jpeg" width="400" alt="A haunted cottage">
+          <div class="overlay">
+            <h3>Haunted Cottage</h3>
+            <p>This house has been abandoned since its owner mysteriously disappeared.</p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h2>Ghost of the Month</h2>
+        <img id="boo" src="assets/imgs/boo.webp">
+    
+      </section>
+      <section id="book">
+        <h2>Book Your Tour</h2>
+        <form>
+          <label for="name"> Name </label>
+          <br>
+          <input type="text" id="name">
+          <br>
+          <label for="email">Email</label>
+          <br>
+          <input type="email" id="email">
+          <br>
+          <label for="tour-type">Select your tour</label>
+          <br>
+          <select id="tour-type">
+            <option>Haunted Cottage</option>
+            <option>Haunted Mansion</option>
+            <option>Haunted Colonial</option>
+          </select>
+          <br>
+          <label for="message">Please tell us anything else we need to know</label>
+          <br>
+          <textarea id="message"></textarea>
+          <br>
+          <button>Book Tour</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img id="bottom-border" src="assets/imgs/ghost-border.png" alt="">
+    </footer> 
+    </body>
+ 
 </html>

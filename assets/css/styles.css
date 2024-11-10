@@ -4,12 +4,22 @@ body {
     color: white;
     font-family: "Vollkorn", "sans-serif";
     margin: 0px;
+ 
+ 
+   
 }
 
-h1 {
+h1, h2 {
     font-family: "Vollkorn";
     color: white;
+    background: url('../imgs/underline.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 20px;
+    background-size: 300px;
 }
+
+/* Top section ghost */
 
 .ghost {
     width: 400px;
@@ -22,11 +32,12 @@ h1 {
     transform: translateX(150px) ;
 }
 
-
+/* tours section */
 
 #tours article {
     position: relative;
 }
+
 
 #tours .overlay {
    position: absolute;
@@ -67,23 +78,63 @@ h1 {
     justify-content: center;
 }
 
+/* ghost of the month section */
+
+#boo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 100%;
+    filter:blur(4px);
+    transition: filter .5s, border-radius .5s;
+}
+
+#boo:hover {
+ filter: blur(0);
+ border-radius: 0;
+}
+
+/* form section */
+
 #book {
+    /* background: linear-gradient(first color, second color), background image url */
     background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)), url('../imgs/ghost-bg.jpeg');
-    height: 600px;
+    padding-bottom: 200px;
+   
 }
 
 #book form {
-    display: flex;
-    flex-direction: column;
+   
     width: 500px;
     text-align: left;
     margin:auto;
     font-size: 20px;
 }
-
+ 
 #book input, #book select {
-    width: 400px;
+  
     height: 30px;
+   
+}
+ 
+#book input, #book select, #book textarea {
+    font-family: 'Vollkorn';
+    font-size: 16px;
+    padding: 5px;
+    width: 500px;
+   
+}
+
+#book label {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+#book #message {
+    height: 200px;
+    margin-bottom: 30px;
+    
 }
 
 #book button {
@@ -99,4 +150,14 @@ h1 {
 #book button:hover {
     background-color: orange;
     color: black;
+} 
+
+
+#bottom-border {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
+
+
