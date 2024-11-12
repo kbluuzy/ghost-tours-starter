@@ -1,19 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ghost Tours</title>
-  <!-- Note that the following 3 tasks each use the "link" element, but in a different way -->
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost Tours</title>
+    <!-- Note that the following 3 tasks each use the "link" element, but in a different way -->
     <!-- Link to existing css file found in assets folder -->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Add a favicon with the image called "cartoon-ghost.png" in the images folder -->
+    <link rel="icon" type="image/x-icon" href="assets/imgs/cartoon-ghost.png">
+    <link rel="apple-touch-icon" type="image/x-icon" href="assets/imgs/cartoon-ghost.png">
    <!-- Find the font Vollkorn on Google Fonts and add that here -->
-  <link rel="stylesheet">
-  <link rel="preconnect">
-</head>
-<body>
-  <main>
-    <h1>Ghost Tours</h1>
-  </main>
-</body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </head>
+
+    <body>
+      <main>
+      <h1>Ghoulish Ghost Tours</h1>
+      <img class="ghost" src="assets/imgs/cartoon-ghost.png">
+      <h2>Choose Your Tour</h2>
+      <section id="tours">
+        <article>
+          <img src="assets/imgs/haunted-house-1.png" width="400" alt="A haunted cottage">
+          <div class="overlay">
+            <h3>Haunted Cottage</h3>
+            <p>This house has been abandoned since its owner mysteriously disappeared.</p>
+          </div>
+        </article>
+        <article>
+          <img src="assets/imgs/haunted-house-2.jpeg" width="400" alt="A haunted cottage">
+          <div class="overlay">
+            <h3>Haunted Cottage</h3>
+            <p>This house has been abandoned since its owner mysteriously disappeared.</p>
+          </div>
+        </article>
+        <article>
+          <img src="assets/imgs/haunted-house-3.jpeg" width="400" alt="A haunted cottage">
+          <div class="overlay">
+            <h3>Haunted Cottage</h3>
+            <p>This house has been abandoned since its owner mysteriously disappeared.</p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h2>Ghost of the Month</h2>
+        <img id="boo" src="assets/imgs/boo.webp">
+    
+      </section>
+      <section id="book">
+        <h2>Book Your Tour</h2>
+        <form>
+          <label for="name"> Name </label>
+          <br>
+          <input type="text" id="name">
+          <br>
+          <label for="email">Email</label>
+          <br>
+          <input type="email" id="email">
+          <br>
+          <label for="tour-type">Select your tour</label>
+          <br>
+          <select id="tour-type">
+            <option>Haunted Cottage</option>
+            <option>Haunted Mansion</option>
+            <option>Haunted Colonial</option>
+          </select>
+          <br>
+          <label for="message">Please tell us anything else we need to know</label>
+          <br>
+          <textarea id="message"></textarea>
+          <br>
+          <button>Book Tour</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img id="bottom-border" src="assets/imgs/ghost-border.png" alt="">
+    </footer> 
+    </body>
+ 
 </html>

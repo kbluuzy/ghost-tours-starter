@@ -7,3 +7,13 @@ h1 {
     font-family: "Vollkorn";
     color: white;
 }
+#ghost {
+    transition: opacity 3s, transform 1s;
+    transition-delay: .5s;
+    width: 400px;
+}
+
+#ghost:hover {
+    opacity: 0;
+    transform: translateX(150px);
+}
